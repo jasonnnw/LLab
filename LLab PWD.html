@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!-- Normal form embed code, add an ID -->
+<iframe id="gform" src="https://docs.google.com/forms/d/e/1FAIpQLSdTnkOE_uCNM1PU6UkKuvzhEI510zcfGbxUkRjGHP5FLQ37-Q/viewform?usp=sf_link" width="800" height="700" frameborder="0" marginheight="0" marginwidth="0" style="margin:0 auto; max-width:100%;">Loading…</iframe>
+
+<script type="text/javascript">
+var load = 0;
+
+document.getElementById('gform').onload = function(){
+    /*Execute on every reload on iFrame*/
+    load++;
+    if(load > 1){
+        /*Second reload is a submit*/
+        document.location = "./llab.html";
+    }
+}
+</script>
+
+<h1></h1>
+<p>.</p>
+
+</body>
+</html>
